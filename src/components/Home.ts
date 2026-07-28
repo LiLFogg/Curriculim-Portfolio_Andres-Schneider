@@ -1,4 +1,4 @@
-import fotoPerfil from "../assets/imagen-perfil.jpg";
+import fotoPerfil from "../assets/imagen-perfil.png";
 
 export function Home() {
   return `
