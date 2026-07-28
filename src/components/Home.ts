@@ -1,3 +1,5 @@
+import fotoPerfil from "../assets/imagen-perfil.jpg";
+
 export function Home() {
   return `
   
@@ -8,7 +10,7 @@ export function Home() {
           <div class="avatar-glow">
 
               <img
-                src="/imagen-perfil.jpg"
+                src="${fotoPerfil}"
                 alt="Andrés"
               >
 

@@ -1,4 +1,4 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const a of i.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function s(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=s(e);fetch(e.href,i)}})();function n(){return`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const r of i.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function s(e){if(e.ep)return;e.ep=!0;const i=n(e);fetch(e.href,i)}})();function a(){return`
   
   <nav class="navbar">
 
@@ -23,7 +23,7 @@
       </ul>
 
   </nav>
-  `}function c(){return`
+  `}const c="/Curriculim-Portfolio_Andres-Schneider/assets/imagen-perfil-BUxAP1uE.jpg";function l(){return`
   
   <section id="home" class="hero">
 
@@ -32,7 +32,7 @@
           <div class="avatar-glow">
 
               <img
-                src="/imagen-perfil.jpg"
+                src="${c}"
                 alt="Andrés"
               >
 
@@ -64,7 +64,7 @@
       </div>
 
   </section>
-  `}const l=[{title:"Sistema de logística y reparto Envios'SF",image:"/screenshot-envios-sf.png",description:"Sistema complejo de logistica de repartos en desarrollo constante.",link:"https://www.envios-sf.com/"},{title:"Página web de comercio local Mr.Rouben",image:"/screenshot-mrrouben.png",description:"Pagina de compras online para comercio local en crecimiento.",link:"https://www.mrrouben.ar/"}];function d(){return`
+  `}const d="/Curriculim-Portfolio_Andres-Schneider/assets/screenshot-envios-sf-CclJmG4d.png",u="/Curriculim-Portfolio_Andres-Schneider/assets/screenshot-mrrouben-0wC5Z0VI.png",p=[{title:"Sistema de logística y reparto Envios'SF",image:d,description:"Sistema complejo de logistica de repartos en desarrollo constante.",link:"https://www.envios-sf.com/"},{title:"Página web de comercio local Mr.Rouben",image:u,description:"Pagina de compras online para comercio local en crecimiento.",link:"https://www.mrrouben.ar/"}];function m(){return`
   
   <section id="projects">
 
@@ -74,7 +74,7 @@
 
       <div class="projects-grid">
 
-          ${l.map(t=>`
+          ${p.map(t=>`
               
                 <div class="project-card">
 
@@ -100,7 +100,7 @@
       </div>
 
   </section>
-  `}function p(){return`
+  `}function f(){return`
   
   <section id="contact">
 
@@ -132,19 +132,19 @@
       </div>
 
   </section>
-  `}const u=document.querySelector("#app");u.innerHTML=`
+  `}const g=document.querySelector("#app");g.innerHTML=`
 
 <div class="background-grid"></div>
 
-${n()}
+${a()}
 
 <main>
 
-    ${c()}
+    ${l()}
 
-    ${d()}
+    ${m()}
 
-    ${p()}
+    ${f()}
 
 </main>
 
