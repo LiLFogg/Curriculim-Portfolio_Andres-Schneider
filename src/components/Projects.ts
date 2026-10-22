@@ -1,16 +1,8 @@
 import { projects } from "../data/Projects";
 
-// Definimos la interfaz para que TypeScript sepa qué estructura tiene cada proyecto
-interface Project {
-  title: string;
-  image: string;
-  description: string;
-  link: string;
-}
-
 export function Projects() {
   return `
-  
+   
   <section id="projects">
 
       <h2 class="section-title">
@@ -21,7 +13,7 @@ export function Projects() {
 
           ${projects
             .map(
-              (project: Project) => `
+              (project) => `
               
                 <div class="project-card">
 
